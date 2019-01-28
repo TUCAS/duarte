@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<meta charset="utf-8">
+<title>JS</title>
+<link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+
+<header>
+	<div id="topHeader">
+		<a href="index.html">HOME</a>
+		<a href="html.html">HTML</a>
+		<a href="css.html">CSS</a>
+		<a href="js.html">JS</a>
+		<div id="navButton">&#9776;</div>
+    </div>  
+    
+    <div id="wrapper">
+        <div id="divLogo"><img id="logo" src="media/js.png" alt=""></div>
+        <div id="goUp">
+            <a href="#root">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    <section id="root">
+    <div id="c_1" class="container">
+            <h2>JS</h2>
+        <ul>
+            <li class="li"><a href="#">js</a></li> 
+                <p>
+                    JavaScript é uma linguagem de programação baseada em scripts e padronizada pela ECMA International (associação especializada na padronização de sistemas de informação). 
+                </p>
+        </ul>
+    </div>
+    </section>
+
+    <footer>
+        <a rel="license" href="direitos.html" target="_blank">
+            <img alt="Licença Creative Commons" style="width: 100px" src="media/EPCI.png"/></a><br />
+            Este trabalho está licenciado com uma Licença 
+            <p>2019 &copy; Duarte Calqueiro</p>
+    </footer>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$(nomeDoElemento).nomeDaAcção
+            $('#nav').slideUp(1);
+        
+            $('#navButton').on('click', function(){
+                $("#nav").delay(10).animate({width: 'toggle'}, 500);
+            });
+    
+            $('.menuBtn').on('click', function(){
+                $("#nav").delay(10).animate({width: 'toggle'}, 500);
+                
+            });
+            
+            /* obter intervalo entre cada item */
+    
+            $('p').append( "<br>").append( "<hr>").append("<br>");
+            
+        });
+    </script>
+    </body>
+    </html>
